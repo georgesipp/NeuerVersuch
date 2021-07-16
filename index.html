@@ -6,6 +6,9 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
 	<a-scene>
+		vr-mode-ui='enabled: false;'
+        renderer="logarithmicDepthBuffer: true;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
       <a-marker-camera type='pattern' patternUrl='pattern-ar.patt'>
         <a-entity
